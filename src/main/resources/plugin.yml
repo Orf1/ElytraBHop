@@ -1,0 +1,6 @@
+name: ElytraBHop
+version: ${project.version}
+main: dev.orf1.plugins.Main
+api-version: 1.15
+commands:
+  bhop:
