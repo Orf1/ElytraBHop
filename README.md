@@ -9,3 +9,5 @@ https://youtu.be/V8XQ6oY-TYg
 **/bhop** -Requires permission elytrabhop.self
 
 **/bhop [player]** -Requires permission elytrabhop.others
+
+https://www.spigotmc.org/resources/elytra-bhop.80896/
