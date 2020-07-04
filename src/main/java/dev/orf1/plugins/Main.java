@@ -4,18 +4,12 @@ import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.block.Action;
-import org.bukkit.event.entity.EntityDamageByBlockEvent;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.EntityToggleGlideEvent;
-import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.event.player.PlayerItemConsumeEvent;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.util.Vector;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +22,8 @@ public final class Main extends JavaPlugin implements  Listener {
     @Override
     public void onEnable() {
         // Plugin startup logic
+        int pluginId = 8081; // <-- Replace with the id of your plugin!
+        Metrics metrics = new Metrics(this, pluginId);
         Bukkit.getPluginManager().registerEvents(this,this);
         getCommand("bhop").setExecutor(new BhopCommand());
     }
